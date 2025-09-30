@@ -6,48 +6,109 @@
     <title>Cardiac Rest - Rockbecca</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f3f4f6;
+            color: #333;
         }
+
+        /* Estilo del encabezado */
         header {
-            background-color: #333;
+            background-color: #5c6bc0;
             color: white;
-            padding: 15px;
+            padding: 20px 0;
             text-align: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
+        /* Estilo de la barra de navegación */
         nav {
-            background-color: #444;
+            background-color: #3f51b5;
             overflow: hidden;
+            font-size: 1.1rem;
         }
+
         nav a {
             float: left;
             display: block;
             color: white;
-            padding: 14px 20px;
+            padding: 15px 20px;
             text-align: center;
             text-decoration: none;
+            transition: background-color 0.3s ease;
         }
+
         nav a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: #536dfe;
         }
+
+        /* Estilo de las secciones de contenido */
         .content {
-            padding: 20px;
-        }
-        .game-link {
-            display: block;
+            padding: 30px;
+            margin: 0 10%;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
             margin-top: 20px;
-            padding: 10px;
+            margin-bottom: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .content:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #3f51b5;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            color: #7e57c2;
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            color: #e91e63;
+            font-size: 1.3rem;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Enlace del juego */
+        .game-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
             background-color: #28a745;
             color: white;
             text-align: center;
             text-decoration: none;
             border-radius: 5px;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
+
         .game-link:hover {
             background-color: #218838;
+            transform: translateY(-3px);
+        }
+
+        /* Fondo de la página */
+        footer {
+            background-color: #3f51b5;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -66,43 +127,31 @@
     <div class="content" id="proyecto">
         <h2>Rockbecca</h2>
         <h3>¿Qué es "Rockbecca"?</h3>
-            <p>Es una pregunta difícil de responder, pero la respuesta más apropiada sería "una carta de amor a los juegos de plataformas", o "el juego que me hubiera gustado encontrar hace 10 años".</p> 
-            <p>En Cardiac Rest apreciamos fervientemente el legado que nos dejaron ciertas joyas del mundo del plataformeo (como fueron la saga clásica de Sonic the Hedgehog y su brillante sistema de movilidad, la fluidez y personalidad de la saga Wario Land o el espíritu de positivismo de los juegos de Kirby).</p>
-            <p>Es todo este conocimiento apasionado que nos ha llevado a lanzar Rockbecca, una aventura en la que acompañaremos a Rebecca, la Elemental de Piedra, en su viaje para descubrir quién amenaza con el equilibrio naturan de los Elementos.</p>
+        <p>Es una carta de amor a los juegos de plataformas, un juego inspirado en las mejores joyas de este género, como Sonic, Wario Land y Kirby. Acompañamos a Rebecca, la Elemental de Piedra, en un viaje para salvar el equilibrio de los Elementos.</p>
+        
         <h3>Historia Principal</h3>
-            <p>Las leyendas dicen que en templos repartidos por todo el mundo, los antiguos seres míticos veneraban a los Elementales, seres todopoderosos y hermanos entre sí que mantienen sus dominios para sí, pero desde el respeto, pues su vínculo es similar al de los hermanos.</p>
-            <p>Oculto entre las montañas, el Templo de la Montaña oculta misterios nunca vistos por el hombre, entre ellos una misteriosa estatua de quien pudo haber sido la Elemental de Piedra. Aunque... ¿Es realmente una estatua?</p>
-            <p>¡POOF!</p>
-            <p>¡Vaya! ¡Resulta que era la propia Rebecca, Elemental de Piedra! Parece ser que llevaba varios siglos convertida en una estatua...</p>
-            <p>Como lleva mucho tiempo sumida en un gran letargo, el mundo parece haber avanzado mucho durante ese tiempo, y parece que ni siquiera sus criaturas adeptas la recuerdan... ¿Qué habrá sido de los otros Elementales? ¿Quién ha sido el detonante de todo este cambio? ¡Habrá que recordarle al mundo quién es la que manda entre las montañas!</p>
+        <p>Las leyendas hablan de seres todopoderosos llamados Elementales, que mantienen el equilibrio natural del mundo. Cuando Rebecca, la Elemental de Piedra, se despierta de un letargo de siglos, se encuentra con un mundo que ha cambiado... ¿Quién ha alterado el equilibrio? ¡Es hora de poner las cosas en su lugar!</p>
+        
         <h3>Personajes</h3>
-            <h4>Rebecca</h4>
-                <p>Puede que solo parezca una niña, pero tras ese rostro apasionado hay siglos de experiencia. Suele lanzarse a la aventura sin pensarlo dos veces y es muy apasionada sobre lo que hace. Tiene la habilidad de convertirse en una estatua de piedra así que ¡mejor no la provoques o te vas a llevar un buen golpe!</p>
-            <h4>Tanukis</h4>
-                <p>Habitantes del bosque vecino a las Montañas y fieles seguidores de la Elemental de Piedra. O al menos solían serlo... ¡Ten cuidado si se vuelven piedra!</p>
-            <h4>Masuta</h4>
-                <p>El sabio Elemental de la Madera. Las leyendas dicen que creó el Templo de Piedra tras escalar la Montaña Sagrada utilizando solamente su bastón para moverse.</p>
-            <h4>Woodlings</h4>
-                <p>Parece que el Elemental de Madera también ha perdido a sus adeptos... Aunque no son tan agresivos, es importante tener cuidado con ellos.</p>
-            <h4>Señorita Picarubí</h4>
-                <p>Un hada madrina que desapareció hace tiempo. ¿Quizás puedas averiguar su paradero?</p>
-            <h4>Robobecca</h4>
-                <p>Este peculiar robot se parece sospechosamente a nuestra protagonista... Me pregunto quién lo habrá construido.</p>
-            <h4>Valerie</h4>
-                <p>Esta chica dice ser una Elemental, pero ¿acaso no parece una simple humana? De todos modos, es mejor no bajar la guardia.</p>
-            <h4>Y muchos más...</h4>
-                <p>Este mundo está lleno de criaturas y deidades fascinantes, ¡No creas que hemos revelado todas!</p>
-        <h3>Historia del juego: Plataformas, transformaciones y un diseño EXTREMADAMENTE DURO.</h3>
-            <p>La historia de este juego surge en la sexta edición de la Game Scholars Game Jam, organizada por la asociación de alumnos de la URJC llamada Game Scholars. La temática fue "extremadamente duro", lo cual nos llevó a la idea de crar un juego en el que el personaje pudiera convertirse en piedra.</p>
-        <h4>Anécdotas del diseño</h4>
-            <p>El diseño inicial se basaba en un juego con movimiento básico, walljump y la posibilidad de convertirse en piedra para ganar momentum y atacar a los enemigos. Esto sentó las bases para el sistema de movimiento que buscamos para este juego.</p>
-            <p>Inicialmente, este juego comenzó como un proyecto con físicas más realistas hecho en Unity, pero por falta de tiempo cambiamos al motor GameMaker Studio 2, con el que seguimos a día de hoy, ya que se adapta a muchas de las necesidades del juego. ¡Casi parece increíble que nos diese tiempo a presentarlo para la Game Jam!</p>
-            <p>El juego consistía en lo que hoy es el primer nivel, separado por partes, y una batalla final contra una versión temprana de lo que hoy es Valerie.</p>
+        <h4>Rebecca</h4>
+        <p>Una valiente joven con siglos de experiencia. Puede transformarse en una estatua de piedra y lanzar poderosos ataques. ¡No la provoques!</p>
+
+        <h4>Tanukis</h4>
+        <p>Los adorables pero peligrosos habitantes del bosque. ¡Cuidado si se transforman en piedra!</p>
+
+        <h4>Masuta</h4>
+        <p>El sabio Elemental de la Madera, conocido por su habilidad para moverse por las montañas con su bastón.</p>
+
+        <h4>Robobecca</h4>
+        <p>Un robot misterioso que parece tener una sorprendente relación con Rebecca. ¿Quién lo construyó?</p>
+
+        <h3>Historia del Juego: Plataformas y Transformaciones</h3>
+        <p>Creado durante la Game Scholars Game Jam, "Rockbecca" es un juego de plataformas con un diseño desafiante y mecánicas únicas como la habilidad de convertirse en piedra. ¡Prepárate para un reto!</p>
     </div>
 
     <div class="content" id="sobre-nosotros">
         <h2>Sobre Nosotros</h2>
-        <p>Somos un equipo de desarrolladores apasionados por los videojuegos y la tecnología. Nuestro objetivo es crear experiencias únicas para los jugadores. ¡Síguenos en nuestras redes sociales y descubre más!</p>
+        <p>Somos un equipo de desarrolladores apasionados por los videojuegos. Nuestra misión es crear experiencias únicas y emocionantes para todos los jugadores. ¡Síguenos y descubre lo que tenemos para ofrecer!</p>
     </div>
 
     <div class="content" id="juego">
@@ -111,6 +160,9 @@
         <a href="https://tu-juego.itch.io" class="game-link" target="_blank">Jugar en Itch.io</a>
     </div>
 
+    <footer>
+        <p>&copy; 2025 Rockbecca. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
-
