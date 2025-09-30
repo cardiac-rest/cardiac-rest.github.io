@@ -3,51 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Simple</title>
+    <title>Mi Proyecto</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
             margin: 0;
             padding: 0;
-            text-align: center;
+            background-color: #f4f4f4;
         }
         header {
-            background: #4CAF50;
+            background-color: #333;
             color: white;
-            padding: 20px 0;
+            padding: 15px;
+            text-align: center;
         }
-        main {
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
             padding: 20px;
         }
-        footer {
-            background: #333;
+        .game-link {
+            display: block;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #28a745;
             color: white;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        a {
-            color: #4CAF50;
+            text-align: center;
             text-decoration: none;
+            border-radius: 5px;
+        }
+        .game-link:hover {
+            background-color: #218838;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Bienvenido a mi página simple</h1>
+        <h1>Bienvenido a Nuestro Proyecto</h1>
     </header>
 
-    <main>
-        <p>Esta es una página web hecha con HTML y un poco de CSS.</p>
-        <p>Puedes <a href="https://www.google.com" target="_blank">visitar Google</a> desde aquí.</p>
-    </main>
+    <nav>
+        <a href="#proyecto">Proyecto</a>
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+        <a href="#juego">Jugar</a>
+    </nav>
 
-    <footer>
-        <p>© 2025 - Mi primera página web</p>
-    </footer>
+    <div class="content" id="proyecto">
+        <h2>Proyecto</h2>
+        <p>Este es un proyecto increíble que hemos estado desarrollando. Estamos muy emocionados de compartirlo contigo. Aquí podrás ver las características, avances y lo que hemos logrado hasta el momento.</p>
+    </div>
+
+    <div class="content" id="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos un equipo de desarrolladores apasionados por los videojuegos y la tecnología. Nuestro objetivo es crear experiencias únicas para los jugadores. ¡Síguenos en nuestras redes sociales y descubre más!</p>
+    </div>
+
+    <div class="content" id="juego">
+        <h2>Juega Nuestro Juego</h2>
+        <p>¡Haz clic en el siguiente enlace para jugar nuestro juego en itch.io!</p>
+        <a href="https://tu-juego.itch.io" class="game-link" target="_blank">Jugar en Itch.io</a>
+    </div>
 
 </body>
 </html>
+
