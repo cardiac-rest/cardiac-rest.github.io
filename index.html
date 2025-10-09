@@ -27,12 +27,8 @@
         }
 
         @keyframes scrollBackground {
-            0% {
-                background-position: 0 0;
-            }
-            100% {
-                background-position: 100% 100%;
-            }
+            0% { background-position: 0 0; }
+            100% { background-position: 100% 100%; }
         }
 
         header {
@@ -48,10 +44,12 @@
             background-color: #3f51b5;
             overflow: hidden;
             font-size: 1.1rem;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
         }
 
         nav a, nav button {
-            float: left;
             display: block;
             color: white;
             padding: 15px 20px;
@@ -66,6 +64,11 @@
 
         nav a:hover, nav button:hover {
             background-color: #536dfe;
+        }
+
+        #lang-toggle {
+            margin-right: auto;
+            font-weight: bold;
         }
 
         .content {
@@ -135,6 +138,26 @@
         .lang-en {
             display: none;
         }
+
+        .profile-buttons {
+            margin-top: 20px;
+        }
+
+        .profile-buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 25px;
+            background-color: #5c6bc0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .profile-buttons a:hover {
+            background-color: #3949ab;
+            transform: translateY(-3px);
+        }
     </style>
 </head>
 <body>
@@ -147,141 +170,48 @@
     </header>
 
     <nav>
+        <button id="lang-toggle">English</button>
         <a href="#proyecto" class="lang-es">Proyecto</a>
         <a href="#proyecto" class="lang-en">Project</a>
-
         <a href="#sobre-nosotros" class="lang-es">Sobre Nosotros</a>
         <a href="#sobre-nosotros" class="lang-en">About Us</a>
-
         <a href="#curiosidades" class="lang-es">Curiosidades</a>
         <a href="#curiosidades" class="lang-en">Trivia</a>
-
         <a href="#juego" class="lang-es">Jugar</a>
         <a href="#juego" class="lang-en">Play</a>
-
-        <button id="lang-toggle">English</button>
     </nav>
 
-    <!-- PROYECTO -->
-    <div class="content" id="proyecto">
-        <h2 class="lang-es">Rockbecca</h2>
-        <h2 class="lang-en">Rockbecca</h2>
-
-        <h3 class="lang-es">¿Qué es "Rockbecca"?</h3>
-        <h3 class="lang-en">What is "Rockbecca"?</h3>
-
-        <p class="lang-es">Es una pregunta difícil de responder, pero la respuesta más apropiada sería "una carta de amor a los juegos de plataformas", o "el juego que me hubiera gustado encontrar hace 10 años".</p> 
-        <p class="lang-en">It’s a difficult question to answer, but the most fitting one would be “a love letter to platform games,” or “the game I wish I had discovered 10 years ago.”</p> 
-
-        <p class="lang-es">En Cardiac Rest apreciamos fervientemente el legado que nos dejaron ciertas joyas del mundo del plataformeo (como fueron la saga clásica de Sonic the Hedgehog y su brillante sistema de movilidad, la fluidez y personalidad de la saga Wario Land o el espíritu de positivismo de los juegos de Kirby).</p>
-        <p class="lang-en">At Cardiac Rest we deeply appreciate the legacy left by platforming gems such as the classic Sonic the Hedgehog series with its brilliant mobility system, the fluidity and personality of Wario Land, or the positive spirit of the Kirby games.</p>
-
-        <p class="lang-es">Es todo este conocimiento apasionado que nos ha llevado a lanzar Rockbecca, una aventura en la que acompañaremos a Rebecca, la Elemental de Piedra, en su viaje para descubrir quién amenaza con el equilibrio naturan de los Elementos.</p>
-        <p class="lang-en">All this passionate knowledge has led us to create Rockbecca, an adventure where we follow Rebecca, the Stone Elemental, in her journey to uncover who threatens the natural balance of the Elements.</p>  
-
-        <h3 class="lang-es">Trama Principal</h3>
-        <h3 class="lang-en">Main Plot</h3>
-
-        <p class="lang-es">Las leyendas dicen que en templos repartidos por todo el mundo, los antiguos seres míticos veneraban a los Elementales, seres todopoderosos y hermanos entre sí que mantienen sus dominios para sí, pero desde el respeto, pues su vínculo es similar al de los hermanos.</p>
-        <p class="lang-en">Legends say that in temples spread throughout the world, ancient mythical beings worshiped the Elementals, powerful sibling entities who each maintained their domains, but always with mutual respect, for their bond was like that of true brothers and sisters.</p>
-
-        <p class="lang-es">Oculto entre las montañas, el Templo de la Montaña oculta misterios nunca vistos por el hombre, entre ellos una misteriosa estatua de quien pudo haber sido la Elemental de Piedra. Aunque... ¿Es realmente una estatua?</p>
-        <p class="lang-en">Hidden among the mountains, the Temple of Stone conceals mysteries never before seen by humans, including a mysterious statue that may have once been the Stone Elemental herself. But... is it really a statue?</p>
-
-        <p class="lang-es">¡POOF!</p>
-        <p class="lang-en">POOF!</p>
-
-        <p class="lang-es">¡Vaya! ¡Resulta que era la propia Rebecca, Elemental de Piedra! Parece ser que llevaba varios siglos convertida en una estatua...</p>
-        <p class="lang-en">Oh wow! It turns out it was Rebecca herself, the Stone Elemental! She had been turned into a statue for centuries...</p>
-
-        <p class="lang-es">Como lleva mucho tiempo sumida en un gran letargo, el mundo parece haber avanzado mucho durante ese tiempo, y parece que ni siquiera sus criaturas adeptas la recuerdan... ¿Qué habrá sido de los otros Elementales? ¿Quién ha sido el detonante de todo este cambio? ¡Habrá que recordarle al mundo quién es la que manda entre las montañas!</p>  
-        <p class="lang-en">Having been in slumber for so long, the world has moved on during her absence, and it seems even her followers no longer remember her... What has become of the other Elementals? Who caused this great change? Time to remind the world who rules the mountains!</p>  
-
-        <h4 class="lang-es">Rebecca</h4>
-        <h4 class="lang-en">Rebecca</h4>
-        <img src="rebecca.png" alt="Rebecca" class="character-image">
-        <p class="lang-es">Puede que solo parezca una niña, pero tras ese rostro apasionado hay siglos de experiencia. Suele lanzarse a la aventura sin pensarlo dos veces y es muy apasionada sobre lo que hace. Tiene la habilidad de convertirse en una estatua de piedra así que ¡mejor no la provoques o te vas a llevar un buen golpe!</p>
-        <p class="lang-en">She may look like just a child, but behind that passionate face lie centuries of experience. She often throws herself into adventure without thinking twice and is very driven about what she does. She has the ability to turn into a stone statue, so don’t provoke her — or you might get crushed!</p>
-
-        <h4 class="lang-es">Tanukis</h4>
-        <h4 class="lang-en">Tanukis</h4>
-        <img src="tanooki.png" alt="Tanooki" class="character-image">
-        <p class="lang-es">Habitantes del bosque vecino a las Montañas y fieles seguidores de la Elemental de Piedra. O al menos solían serlo... ¡Ten cuidado si se vuelven piedra!</p>
-        <p class="lang-en">Inhabitants of the forest near the mountains and loyal followers of the Stone Elemental. Or at least they used to be... Be careful if they turn into stone!</p>
-
-        <h4 class="lang-es">Masuta</h4>
-        <h4 class="lang-en">Masuta</h4>
-        <p class="lang-es">El sabio Elemental de la Madera. Las leyendas dicen que creó el Templo de Piedra tras escalar la Montaña Sagrada utilizando solamente su bastón para moverse.</p>
-        <p class="lang-en">The wise Wood Elemental. Legends say he created the Temple of Stone after climbing the Sacred Mountain using nothing but his staff.</p>
-
-        <h4 class="lang-es">Maderines</h4>
-        <h4 class="lang-en">Woodlings</h4>
-        <img src="woodling.png" alt="Woodling" class="character-image">
-        <p class="lang-es">Parece que el Elemental de Madera también ha perdido a sus adeptos... Aunque no son tan agresivos, es importante tener cuidado con ellos.</p>
-        <p class="lang-en">It seems the Wood Elemental has also lost his followers... Although not as aggressive, it’s still important to be cautious around them.</p>
-
-        <h4 class="lang-es">Señorita Picarubí</h4>
-        <h4 class="lang-en">Miss Rubee</h4>
-        <img src="miss_rubee.png" alt="Miss Rubee" class="character-image">
-        <p class="lang-es">Un hada madrina que desapareció hace tiempo. ¿Quizás puedas averiguar su paradero?</p>
-        <p class="lang-en">A fairy godmother who disappeared long ago. Perhaps you can uncover her whereabouts?</p>
-
-        <h4 class="lang-es">Robobecca</h4>
-        <h4 class="lang-en">Robobecca</h4>
-        <img src="robobecca.png" alt="Robobecca" class="character-image">
-        <p class="lang-es">Este peculiar robot se parece sospechosamente a nuestra protagonista... Me pregunto quién lo habrá construido.</p>
-        <p class="lang-en">This peculiar robot looks suspiciously like our protagonist... I wonder who built it?</p>
-
-        <h4 class="lang-es">Valerie</h4>
-        <h4 class="lang-en">Valerie</h4>
-        <img src="valerie.png" alt="Valerie" class="character-image">
-        <p class="lang-es">Esta chica dice ser una Elemental, pero ¿acaso no parece una simple humana? De todos modos, es mejor no bajar la guardia.</p>
-        <p class="lang-en">This girl claims to be an Elemental, but doesn’t she seem just like a human? Either way, it’s best not to let your guard down.</p>
-
-        <h4 class="lang-es">Y muchos más...</h4>
-        <h4 class="lang-en">And many more...</h4>
-        <p class="lang-es">Este mundo está lleno de criaturas y deidades fascinantes, ¡No creas que hemos revelado todas!</p>
-        <p class="lang-en">This world is full of fascinating creatures and deities — don’t think we’ve revealed them all!</p>
-    </div>
-
-    <!-- SOBRE NOSOTROS -->
     <div class="content" id="sobre-nosotros">
         <h2 class="lang-es">Sobre Nosotros</h2>
         <h2 class="lang-en">About Us</h2>
         <p class="lang-es">Somos un equipo de desarrolladores apasionados por los videojuegos. Nuestra misión es crear experiencias únicas y emocionantes para todos los jugadores. ¡Síguenos y descubre lo que tenemos para ofrecer!</p>
         <p class="lang-en">We are a team of developers passionate about video games. Our mission is to create unique and exciting experiences for all players. Follow us and discover what we have to offer!</p>
+        <div class="profile-buttons">
+            <a href="https://rolexless.itch.io" target="_blank">Rolexless</a>
+            <a href="https://cardiacrest.itch.io" target="_blank">CardiacRest</a>
+            <a href="https://rockbecca.itch.io" target="_blank">Rockbecca</a>
+        </div>
     </div>
 
-    <!-- CURIOSIDADES -->
-    <div class="content" id="curiosidades">
-        <h2 class="lang-es">Curiosidades</h2>
-        <h2 class="lang-en">Trivia</h2>
-        <h3 class="lang-es">Plataformas, transformaciones y un diseño EXTREMADAMENTE DURO.</h3>
-        <h3 class="lang-en">Platforms, transformations, and EXTREMELY HARD design.</h3>
+    <script>
+        const langToggle = document.getElementById('lang-toggle');
+        let currentLang = 'es';
+        langToggle.addEventListener('click', () => {
+            const esElements = document.querySelectorAll('.lang-es');
+            const enElements = document.querySelectorAll('.lang-en');
+            if (currentLang === 'es') {
+                esElements.forEach(el => el.style.display = 'none');
+                enElements.forEach(el => el.style.display = '');
+                langToggle.textContent = 'Español';
+                currentLang = 'en';
+            } else {
+                esElements.forEach(el => el.style.display = '');
+                enElements.forEach(el => el.style.display = 'none');
+                langToggle.textContent = 'English';
+                currentLang = 'es';
+            }
+        });
+    </script>
 
-        <p class="lang-es">La historia de este juego surge en la sexta edición de la Game Scholars Game Jam, organizada por la asociación de alumnos de la URJC llamada Game Scholars. La temática fue "extremadamente duro", lo cual nos llevó a la idea de crar un juego en el que el personaje pudiera convertirse en piedra.</p>
-        <p class="lang-en">The story of this game originates from the 6th edition of the Game Scholars Game Jam, organized by the URJC student association “Game Scholars.” The theme was “extremely hard,” which led us to the idea of a game where the character could turn into stone.</p>
-
-        <p class="lang-es">El diseño inicial se basaba en un juego con movimiento básico, walljump y la posibilidad de convertirse en piedra para ganar momentum y atacar a los enemigos. Esto sentó las bases para el sistema de movimiento que buscamos para este juego.</p>
-        <p class="lang-en">The initial design was based on a game with basic movement, wall jumps, and the ability to turn into stone to gain momentum and attack enemies. This laid the foundation for the movement system we sought for this game.</p>
-
-        <p class="lang-es">Inicialmente, este juego comenzó como un proyecto con físicas más realistas hecho en Unity, pero por falta de tiempo cambiamos al motor GameMaker Studio 2, con el que seguimos a día de hoy, ya que se adapta a muchas de las necesidades del juego. ¡Casi parece increíble que nos diese tiempo a presentarlo para la Game Jam!</p>
-        <p class="lang-en">Initially, this game began as a project with more realistic physics made in Unity, but due to time constraints we switched to GameMaker Studio 2, which we still use today, as it fits many of the game’s needs. It’s almost unbelievable we managed to submit it for the Game Jam!</p>
-
-        <p class="lang-es">El juego consistía en lo que hoy es el primer nivel, separado por partes, y una batalla final contra una versión temprana de lo que hoy es Valerie.</p>
-        <p class="lang-en">The game consisted of what is now the first level, divided into sections, and a final battle against an early version of today’s Valerie.</p>
-    </div>
-
-    <!-- JUEGO -->
-    <div class="content" id="juego">
-        <h2 class="lang-es">¿Te has quedado con ganas de jugar?</h2>
-        <h2 class="lang-en">Want to play?</h2>
-        <p class="lang-es">¡Haz clic en el siguiente enlace para jugar nuestro juego en itch.io!</p>
-        <p class="lang-en">Click the link below to play our game on itch.io!</p>
-        <a href="https://rolexless.itch.io/rockbecca" class="game-link lang-es" target="_blank">Jugar en Itch.io</a>
-        <a href="https://rolexless.itch.io/rockbecca" class="game-link lang-en" target="_blank">Play on Itch.io</a>
-    </div>
-
-    <footer>
-        <p class="lang-es">Rockbecca - Cardiac Rest 2025</p>
-        <p class="lang-en">Rock
+</body>
+</html>
