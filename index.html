@@ -5,110 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cardiac Rest - Rockbecca</title>
 <style>
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f3f4f6;
-    color: #333;
-    position: relative;
-}
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('bg.png');
-    background-repeat: repeat;
-    z-index: -1;
-    animation: scrollBackground 120s linear infinite;
-}
-@keyframes scrollBackground {
-    0% { background-position: 0 0; }
-    100% { background-position: 100% 100%; }
-}
-header {
-    background-color: #5c6bc0;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 2rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-nav {
-    background-color: #3f51b5;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-    font-size: 1.1rem;
-}
-.nav-links { display: flex; }
-nav a, nav button {
-    color: white;
-    padding: 15px 20px;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-size: 1.1rem;
-}
-nav a:hover, nav button:hover { background-color: #536dfe; }
-#lang-toggle { font-weight: bold; }
-.content {
-    padding: 30px;
-    margin: 0 10%;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    transition: transform 0.3s ease;
-}
-.content:hover { transform: translateY(-5px); }
-h2 { color: #3f51b5; font-size: 1.8rem; }
-h3 { color: #7e57c2; font-size: 1.5rem; }
-h4 { color: #e91e63; font-size: 1.3rem; text-align: center; }
-p { line-height: 1.6; font-size: 1rem; color: #555; }
-.character-image { display: block; margin: 20px auto; max-width: 200px; border-radius: 10px; }
-.game-link {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 15px 30px;
-    background-color: #28a745;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-.game-link:hover { background-color: #218838; transform: translateY(-3px); }
-footer {
-    background-color: #3f51b5;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-    font-size: 0.9rem;
-    margin-top: 40px;
-}
-.lang-en { display: none; }
-.profile-buttons { margin-top: 20px; text-align: center; }
-.profile-buttons a {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 25px;
-    background-color: #5c6bc0;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-.profile-buttons a:hover { background-color: #3949ab; transform: translateY(-3px); }
+body { font-family: 'Arial', sans-serif; margin:0; padding:0; background-color:#f3f4f6; color:#333; position:relative; }
+.background { position:absolute; top:0; left:0; width:100%; height:100%; background-image:url('bg.png'); background-repeat:repeat; z-index:-1; animation: scrollBackground 120s linear infinite; }
+@keyframes scrollBackground { 0%{background-position:0 0;} 100%{background-position:100% 100%;} }
+header { background-color:#5c6bc0; color:white; padding:20px 0; text-align:center; font-size:2rem; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
+nav { background-color:#3f51b5; display:flex; justify-content:space-between; align-items:center; padding:0 10px; font-size:1.1rem; }
+.nav-links { display:flex; }
+nav a, nav button { color:white; padding:15px 20px; text-align:center; text-decoration:none; transition:background-color 0.3s ease; border:none; background:none; cursor:pointer; font-size:1.1rem; }
+nav a:hover, nav button:hover { background-color:#536dfe; }
+#lang-toggle { font-weight:bold; }
+.content { padding:30px; margin:0 10%; background-color:white; box-shadow:0 4px 8px rgba(0,0,0,0.1); border-radius:8px; margin-top:20px; margin-bottom:40px; transition:transform 0.3s ease; }
+.content:hover { transform:translateY(-5px); }
+h2 { color:#3f51b5; font-size:1.8rem; }
+h3 { color:#7e57c2; font-size:1.5rem; }
+h4 { color:#e91e63; font-size:1.3rem; text-align:center; }
+p { line-height:1.6; font-size:1rem; color:#555; }
+.character-image { display:block; margin:20px auto; max-width:200px; border-radius:10px; }
+.game-link { display:inline-block; margin-top:20px; padding:15px 30px; background-color:#28a745; color:white; text-align:center; text-decoration:none; border-radius:5px; font-size:1.2rem; box-shadow:0 4px 6px rgba(0,0,0,0.2); transition:background-color 0.3s ease, transform 0.3s ease; }
+.game-link:hover { background-color:#218838; transform:translateY(-3px); }
+footer { background-color:#3f51b5; color:white; padding:15px 0; text-align:center; font-size:0.9rem; margin-top:40px; }
+.lang { display:none; }
+.lang-es { display:block; }
+.profile-buttons { margin-top:20px; text-align:center; }
+.profile-buttons a { display:inline-block; margin:10px; padding:12px 25px; background-color:#5c6bc0; color:white; text-decoration:none; border-radius:5px; transition:background-color 0.3s ease, transform 0.3s ease; }
+.profile-buttons a:hover { background-color:#3949ab; transform:translateY(-3px); }
 </style>
 </head>
 <body>
@@ -116,30 +36,29 @@ footer {
 <div class="background"></div>
 
 <header>
-    <h1 class="lang-es">¡Bienvenido al mundo de Rockbecca!</h1>
-    <h1 class="lang-en">Welcome to the world of Rockbecca!</h1>
+    <h1 class="lang lang-es">¡Bienvenido al mundo de Rockbecca!</h1>
+    <h1 class="lang lang-en">Welcome to the world of Rockbecca!</h1>
 </header>
 
 <nav>
     <div class="nav-links">
-        <a href="#sobre-nosotros" class="lang-es">Sobre Nosotros</a>
-        <a href="#sobre-nosotros" class="lang-en">About Us</a>
-        <a href="#proyecto" class="lang-es">Proyecto</a>
-        <a href="#proyecto" class="lang-en">Project</a>
-        <a href="#curiosidades" class="lang-es">Curiosidades</a>
-        <a href="#curiosidades" class="lang-en">Trivia</a>
-        <a href="#juego" class="lang-es">Jugar</a>
-        <a href="#juego" class="lang-en">Play</a>
+        <a href="#sobre-nosotros" class="lang lang-es">Sobre Nosotros</a>
+        <a href="#sobre-nosotros" class="lang lang-en">About Us</a>
+        <a href="#proyecto" class="lang lang-es">Proyecto</a>
+        <a href="#proyecto" class="lang lang-en">Project</a>
+        <a href="#curiosidades" class="lang lang-es">Curiosidades</a>
+        <a href="#curiosidades" class="lang lang-en">Trivia</a>
+        <a href="#juego" class="lang lang-es">Jugar</a>
+        <a href="#juego" class="lang lang-en">Play</a>
     </div>
     <button id="lang-toggle">English</button>
 </nav>
 
-<!-- Sobre Nosotros -->
 <div class="content" id="sobre-nosotros">
-    <h2 class="lang-es">Sobre Nosotros</h2>
-    <h2 class="lang-en">About Us</h2>
-    <p class="lang-es">Somos un equipo de desarrolladores apasionados por los videojuegos. Nuestra misión es crear experiencias únicas y emocionantes para todos los jugadores. ¡Síguenos y descubre lo que tenemos para ofrecer!</p>
-    <p class="lang-en">We are a team of developers passionate about video games. Our mission is to create unique and exciting experiences for all players. Follow us and discover what we have to offer!</p>
+    <h2 class="lang lang-es">Sobre Nosotros</h2>
+    <h2 class="lang lang-en">About Us</h2>
+    <p class="lang lang-es">Somos un equipo de desarrolladores apasionados por los videojuegos. Nuestra misión es crear experiencias únicas y emocionantes para todos los jugadores. ¡Síguenos y descubre lo que tenemos para ofrecer!</p>
+    <p class="lang lang-en">We are a team of developers passionate about video games. Our mission is to create unique and exciting experiences for all players. Follow us and discover what we have to offer!</p>
     <div class="profile-buttons">
         <a href="https://bluecario123.itch.io" target="_blank">Guillermo Carranza García</a>
         <a href="https://liquidsireh.itch.io" target="_blank">Andrés García Arquero</a>
@@ -147,117 +66,111 @@ footer {
     </div>
 </div>
 
-<!-- Proyecto -->
 <div class="content" id="proyecto">
-    <h2 class="lang-es">Rockbecca</h2>
-    <h2 class="lang-en">Rockbecca</h2>
+    <h2 class="lang lang-es">Rockbecca</h2>
+    <h2 class="lang lang-en">Rockbecca</h2>
 
-    <h3 class="lang-es">¿Qué es "Rockbecca"?</h3>
-    <h3 class="lang-en">What is "Rockbecca"?</h3>
+    <h3 class="lang lang-es">¿Qué es "Rockbecca"?</h3>
+    <h3 class="lang lang-en">What is "Rockbecca"?</h3>
+    <p class="lang lang-es">Es una carta de amor a los juegos de plataformas, o “el juego que me hubiera gustado encontrar hace 10 años”.</p>
+    <p class="lang lang-en">It’s a love letter to platform games, or “the game I wish I had discovered 10 years ago.”</p>
 
-    <p class="lang-es">Es una carta de amor a los juegos de plataformas, o “el juego que me hubiera gustado encontrar hace 10 años”.</p> 
-    <p class="lang-en">It’s a love letter to platform games, or “the game I wish I had discovered 10 years ago.”</p> 
+    <p class="lang lang-es">En Cardiac Rest apreciamos el legado de sagas como Sonic, Wario Land o Kirby.</p>
+    <p class="lang lang-en">At Cardiac Rest we deeply appreciate the legacy of series like Sonic, Wario Land, and Kirby.</p>
 
-    <p class="lang-es">En Cardiac Rest apreciamos el legado de sagas como Sonic, Wario Land o Kirby.</p>
-    <p class="lang-en">At Cardiac Rest we deeply appreciate the legacy of series like Sonic, Wario Land, and Kirby.</p>
+    <p class="lang lang-es">Todo esto nos llevó a lanzar Rockbecca, una aventura en la que acompañamos a Rebecca, la Elemental de Piedra.</p>
+    <p class="lang lang-en">All this led us to create Rockbecca, an adventure following Rebecca, the Stone Elemental.</p>
 
-    <p class="lang-es">Todo esto nos llevó a lanzar Rockbecca, una aventura en la que acompañamos a Rebecca, la Elemental de Piedra.</p>
-    <p class="lang-en">All this led us to create Rockbecca, an adventure following Rebecca, the Stone Elemental.</p>  
+    <h3 class="lang lang-es">Trama Principal</h3>
+    <h3 class="lang lang-en">Main Plot</h3>
+    <p class="lang lang-es">Las leyendas hablan de los Elementales, seres que mantienen el equilibrio de la naturaleza. Pero algo ha alterado ese equilibrio...</p>
+    <p class="lang lang-en">Legends speak of the Elementals, beings who maintain nature’s balance. But something has disrupted that harmony...</p>
 
-    <h3 class="lang-es">Trama Principal</h3>
-    <h3 class="lang-en">Main Plot</h3>
+    <p class="lang lang-es">Oculto entre las montañas, el Templo de la Montaña guarda secretos — entre ellos, una estatua misteriosa.</p>
+    <p class="lang lang-en">Hidden in the mountains, the Temple of Stone hides secrets — among them, a mysterious statue.</p>
 
-    <p class="lang-es">Las leyendas hablan de los Elementales, seres que mantienen el equilibrio de la naturaleza. Pero algo ha alterado ese equilibrio...</p>
-    <p class="lang-en">Legends speak of the Elementals, beings who maintain nature’s balance. But something has disrupted that harmony...</p>
-
-    <p class="lang-es">Oculto entre las montañas, el Templo de la Montaña guarda secretos — entre ellos, una estatua misteriosa.</p>
-    <p class="lang-en">Hidden in the mountains, the Temple of Stone hides secrets — among them, a mysterious statue.</p>
-
-    <p class="lang-es">¡POOF! ¡Era Rebecca, la Elemental de Piedra!</p>
-    <p class="lang-en">POOF! It was Rebecca, the Stone Elemental!</p>
+    <p class="lang lang-es">¡POOF! ¡Era Rebecca, la Elemental de Piedra!</p>
+    <p class="lang lang-en">POOF! It was Rebecca, the Stone Elemental!</p>
 
     <!-- Characters -->
-    <h4 class="lang-es">Rebecca</h4>
-    <h4 class="lang-en">Rebecca</h4>
+    <h4 class="lang lang-es">Rebecca</h4>
+    <h4 class="lang lang-en">Rebecca</h4>
     <img src="rebecca.png" alt="Rebecca" class="character-image">
-    <p class="lang-es">Puede que solo parezca una niña, pero tras ese rostro apasionado hay siglos de experiencia. Suele lanzarse a la aventura sin pensarlo dos veces y es muy apasionada sobre lo que hace. Tiene la habilidad de convertirse en una estatua de piedra así que ¡mejor no la provoques!</p>
-    <p class="lang-en">She may look like just a child, but behind that passionate face lie centuries of experience. She often throws herself into adventure without thinking twice and is very driven about what she does. She has the ability to turn into a stone statue, so don’t provoke her!</p>
+    <p class="lang lang-es">Puede que solo parezca una niña, pero tras ese rostro apasionado hay siglos de experiencia. Suele lanzarse a la aventura sin pensarlo dos veces y es muy apasionada sobre lo que hace. Tiene la habilidad de convertirse en una estatua de piedra así que ¡mejor no la provoques!</p>
+    <p class="lang lang-en">She may look like just a child, but behind that passionate face lie centuries of experience. She often throws herself into adventure without thinking twice and is very driven about what she does. She has the ability to turn into a stone statue, so don’t provoke her!</p>
 
-    <h4 class="lang-es">Tanukis</h4>
-    <h4 class="lang-en">Tanukis</h4>
+    <h4 class="lang lang-es">Tanukis</h4>
+    <h4 class="lang lang-en">Tanukis</h4>
     <img src="tanooki.png" alt="Tanooki" class="character-image">
-    <p class="lang-es">Habitantes del bosque vecino a las Montañas y fieles seguidores de la Elemental de Piedra. O al menos solían serlo... ¡Ten cuidado si se vuelven piedra!</p>
-    <p class="lang-en">Inhabitants of the forest near the mountains and loyal followers of the Stone Elemental. Or at least they used to be... Be careful if they turn into stone!</p>
+    <p class="lang lang-es">Habitantes del bosque vecino a las Montañas y fieles seguidores de la Elemental de Piedra. O al menos solían serlo... ¡Ten cuidado si se vuelven piedra!</p>
+    <p class="lang lang-en">Inhabitants of the forest near the mountains and loyal followers of the Stone Elemental. Or at least they used to be... Be careful if they turn into stone!</p>
 
-    <h4 class="lang-es">Masuta</h4>
-    <h4 class="lang-en">Masuta</h4>
+    <h4 class="lang lang-es">Masuta</h4>
+    <h4 class="lang lang-en">Masuta</h4>
     <img src="masuta.png" alt="Masuta" class="character-image">
-    <p class="lang-es">El sabio Elemental de la Madera. Las leyendas dicen que creó el Templo de Piedra tras escalar la Montaña Sagrada utilizando solamente su bastón para moverse.</p>
-    <p class="lang-en">The wise Wood Elemental. Legends say he created the Temple of Stone after climbing the Sacred Mountain using nothing but his staff.</p>
+    <p class="lang lang-es">El sabio Elemental de la Madera. Las leyendas dicen que creó el Templo de Piedra tras escalar la Montaña Sagrada utilizando solamente su bastón para moverse.</p>
+    <p class="lang lang-en">The wise Wood Elemental. Legends say he created the Temple of Stone after climbing the Sacred Mountain using nothing but his staff.</p>
 
-    <h4 class="lang-es">Maderines</h4>
-    <h4 class="lang-en">Woodlings</h4>
+    <h4 class="lang lang-es">Maderines</h4>
+    <h4 class="lang lang-en">Woodlings</h4>
     <img src="woodling.png" alt="Woodling" class="character-image">
-    <p class="lang-es">Parece que el Elemental de Madera también ha perdido a sus adeptos... Aunque no son tan agresivos, es importante tener cuidado con ellos.</p>
-    <p class="lang-en">It seems the Wood Elemental has also lost his followers... Although not as aggressive, it’s still important to be cautious around them.</p>
+    <p class="lang lang-es">Parece que el Elemental de Madera también ha perdido a sus adeptos... Aunque no son tan agresivos, es importante tener cuidado con ellos.</p>
+    <p class="lang lang-en">It seems the Wood Elemental has also lost his followers... Although not as aggressive, it’s still important to be cautious around them.</p>
 
-    <h4 class="lang-es">Señorita Picarubí</h4>
-    <h4 class="lang-en">Miss Rubee</h4>
+    <h4 class="lang lang-es">Señorita Picarubí</h4>
+    <h4 class="lang lang-en">Miss Rubee</h4>
     <img src="miss_rubee.png" alt="Miss Rubee" class="character-image">
-    <p class="lang-es">Un hada madrina que desapareció hace tiempo. ¿Quizás puedas averiguar su paradero?</p>
-    <p class="lang-en">A fairy godmother who disappeared long ago. Perhaps you can uncover her whereabouts?</p>
+    <p class="lang lang-es">Un hada madrina que desapareció hace tiempo. ¿Quizás puedas averiguar su paradero?</p>
+    <p class="lang lang-en">A fairy godmother who disappeared long ago. Perhaps you can uncover her whereabouts?</p>
 
-    <h4 class="lang-es">Robobecca</h4>
-    <h4 class="lang-en">Robobecca</h4>
+    <h4 class="lang lang-es">Robobecca</h4>
+    <h4 class="lang lang-en">Robobecca</h4>
     <img src="robobecca.png" alt="Robobecca" class="character-image">
-    <p class="lang-es">Este peculiar robot se parece sospechosamente a nuestra protagonista... Me pregunto quién lo habrá construido.</p>
-    <p class="lang-en">This peculiar robot looks suspiciously like our protagonist... I wonder who built it?</p>
+    <p class="lang lang-es">Este peculiar robot se parece sospechosamente a nuestra protagonista... Me pregunto quién lo habrá construido.</p>
+    <p class="lang lang-en">This peculiar robot looks suspiciously like our protagonist... I wonder who built it?</p>
 
-    <h4 class="lang-es">Valerie</h4>
-    <h4 class="lang-en">Valerie</h4>
+    <h4 class="lang lang-es">Valerie</h4>
+    <h4 class="lang lang-en">Valerie</h4>
     <img src="valerie.png" alt="Valerie" class="character-image">
-    <p class="lang-es">Esta chica dice ser una Elemental, pero ¿acaso no parece una simple humana? De todos modos, es mejor no bajar la guardia.</p>
-    <p class="lang-en">This girl claims to be an Elemental, but doesn’t she seem just like a human? Either way, it’s best not to let your guard down.</p>
+    <p class="lang lang-es">Esta chica dice ser una Elemental, pero ¿acaso no parece una simple humana? De todos modos, es mejor no bajar la guardia.</p>
+    <p class="lang lang-en">This girl claims to be an Elemental, but doesn’t she seem just like a human? Either way, it’s best not to let your guard down.</p>
 </div>
 
-<!-- Curiosidades -->
 <div class="content" id="curiosidades">
-    <h2 class="lang-es">Curiosidades</h2>
-    <h2 class="lang-en">Trivia</h2>
+    <h2 class="lang lang-es">Curiosidades</h2>
+    <h2 class="lang lang-en">Trivia</h2>
+    <h3 class="lang lang-es">Plataformas, transformaciones y un diseño EXTREMADAMENTE DURO.</h3>
+    <h3 class="lang lang-en">Platforms, transformations, and EXTREMELY HARD design.</h3>
 
-    <h3 class="lang-es">Plataformas, transformaciones y un diseño EXTREMADAMENTE DURO.</h3>
-    <h3 class="lang-en">Platforms, transformations, and EXTREMELY HARD design.</h3>
+    <p class="lang lang-es">La historia de este juego surge en la sexta edición de la Game Scholars Game Jam, organizada por la asociación de alumnos de la URJC llamada Game Scholars. La temática fue "extremadamente duro", lo cual nos llevó a la idea de crear un juego en el que el personaje pudiera convertirse en piedra.</p>
+    <p class="lang lang-en">The story of this game originates from the 6th edition of the Game Scholars Game Jam, organized by the URJC student association “Game Scholars.” The theme was “extremely hard,” which led us to the idea of a game where the character could turn into stone.</p>
 
-    <p class="lang-es">La historia de este juego surge en la sexta edición de la Game Scholars Game Jam, organizada por la asociación de alumnos de la URJC llamada Game Scholars. La temática fue "extremadamente duro", lo cual nos llevó a la idea de crear un juego en el que el personaje pudiera convertirse en piedra.</p>
-    <p class="lang-en">The story of this game originates from the 6th edition of the Game Scholars Game Jam, organized by the URJC student association “Game Scholars.” The theme was “extremely hard,” which led us to the idea of a game where the character could turn into stone.</p>
-
-    <p class="lang-es">Inicialmente, este juego comenzó como un proyecto en Unity, pero cambiamos a GameMaker Studio 2, el cual seguimos usando hoy.</p>
-    <p class="lang-en">Initially, this game began as a Unity project, but we switched to GameMaker Studio 2, which we still use today.</p>
+    <p class="lang lang-es">Inicialmente, este juego comenzó como un proyecto en Unity, pero cambiamos a GameMaker Studio 2, el cual seguimos usando hoy.</p>
+    <p class="lang lang-en">Initially, this game began as a Unity project, but we switched to GameMaker Studio 2, which we still use today.</p>
 </div>
 
-<!-- Juego -->
 <div class="content" id="juego">
-    <h2 class="lang-es">¡Juega ahora!</h2>
-    <h2 class="lang-en">Play Now!</h2>
-    <a href="https://rolexless.itch.io/rockbecca" target="_blank" class="game-link lang-es">Jugar en Itch.io</a>
-    <a href="https://rolexless.itch.io/rockbecca" target="_blank" class="game-link lang-en">Play on Itch.io</a>
+    <h2 class="lang lang-es">¡Juega ahora!</h2>
+    <h2 class="lang lang-en">Play Now!</h2>
+    <a href="https://rolexless.itch.io/rockbecca" target="_blank" class="game-link lang lang-es">Jugar en Itch.io</a>
+    <a href="https://rolexless.itch.io/rockbecca" target="_blank" class="game-link lang lang-en">Play on Itch.io</a>
 </div>
 
 <footer>
-    <p class="lang-es">2025 Cardiac Rest. Todos los derechos reservados.</p>
-    <p class="lang-en">2025 Cardiac Rest. All rights reserved.</p>
+    <p class="lang lang-es">© 2025 Cardiac Rest. Todos los derechos reservados.</p>
+    <p class="lang lang-en">© 2025 Cardiac Rest. All rights reserved.</p>
 </footer>
 
 <script>
-const langToggle = document.getElementById('lang-toggle');
+const toggleButton = document.getElementById('lang-toggle');
 let currentLang = 'es';
-function setLanguage(lang) {
-    document.querySelectorAll('.lang-es').forEach(el => el.style.display = lang === 'es' ? '' : 'none');
-    document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? '' : 'none');
-    langToggle.textContent = lang === 'es' ? 'English' : 'Español';
+function setLanguage(lang){
+    document.querySelectorAll('.lang-es').forEach(el=>el.style.display=lang==='es'?'block':'none');
+    document.querySelectorAll('.lang-en').forEach(el=>el.style.display=lang==='en'?'block':'none');
+    toggleButton.textContent = lang==='es'?'English':'Español';
     currentLang = lang;
 }
-langToggle.addEventListener('click', () => setLanguage(currentLang === 'es' ? 'en' : 'es'));
+toggleButton.addEventListener('click', ()=>{ setLanguage(currentLang==='es'?'en':'es'); });
 </script>
 
 </body>
